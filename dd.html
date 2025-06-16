@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <title>Swiper demo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+<body>
+  <header class="main-visual">
+    <video autoplay muted loop id="mainVideo">
+      <source src="images/13717509_2048_1080_30fps.mp4"/>
+    </video>
+    <h1 class="main-title">Who Is The King</h1><h3 class="blackbombat">BLACK COMBAT</h3><br>
+    <div class="scroll"><img src="images/scrolldown.png"alt="">  Scrolldown</div>
+  </header>
+
+  <nav class="navbar hidden">
+    <ul>
+      <a href="#none"><img src="images/logo (1).png" alt=""></a>
+      <li><a href="#none">COMPANY</a></li>
+      <li><a href="#none">STORE</a></li>
+      <li><a href="#none">EVENT</a></li>
+      <li><a href="#none">RULES</a></li>
+      <li><a href="#none">RANKING</a><li>
+     
+    </ul>
+  </nav>
+
+<section id="mainevent">
+  <h1 class="mianevent-title">MAIN-EVENT</h1>
+
+ <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/7.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/8.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/9.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="images/10.jpg" alt=""></div>
+   
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+</section>
+
+
+    <section id="mid-visual">
+  <h1 class="uer-swiper-title">FIGHT CARD</h1>
+      <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      
+        
+      <div class="fight-card-all">
+        <img src="images/user-jungwonhee1.png"id="fighterImage" alt="">
+      <div class="fight-card-user">
+        <p class="fly">플라이급 #6<p><br>
+        <p class="name1">정원희</p><br>
+        <p class="dog">투견</p>
+        <p class="win">9W 8L</p></div>
+<h2 class="vs">VS</h2>
+
+      <div class="fight-card-user">
+        <p class="fly">플라이급 #5<p><br>
+        <p class="name1">박태호</p><br>
+        <p class="dog">앤쵸비</p>
+      <p class="win">8W 5L</p>
+    </div><img src="images/user-teahoo1.png"id="fighterImage2" alt="">
+
+<!--@@@@@@@@@@@@@@모달 첫번쨰@@@@@@@@@@@@@@@@  -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="user-profil"><h2>선수정보</h2><br>
+ <h5>플라이급 6위</h5><br><h3>정원희</h3><br><strong>"투견"</strong><br>Age:33<br>
+ 대구 킹덤주짓수<br>
+<a href="https://www.instagram.com/w.h_mma/">@w.h_mma</a></div>
+<div class="user-hw"><span>HEIGHT</span><span>WEIGHT</span></div>
+<div class="user-hw2"><span>168CM</span><span>80KG</span></div>
+<div class="madal-wl">9
+Win
+8
+Loss
+0
+Draw</div>
+<img src="images/1222.png" alt="">
+  <div id="caption"></div>
+</div>
+
+
+<!-- ######################모달2#################### -->
+<div id="imageModal2" class="modal2">
+  <span class="close2">&times;</span>
+  <div class="user-profil2"><h2>선수정보</h2><br>
+ <h5>플라이급 6위</h5><br><h3>박태호</h3><br><strong>"앤쵸비"</strong><br>Age:30<br>
+팀흔TNT<br>
+<a href="https://www.instagram.com/w.h_mma/">@w.h_mma</a></div>
+<div class="user-hw3"><span>HEIGHT</span><span>WEIGHT</span></div>
+<div class="user-hw4"><span>176CM</span><span>85KG</span></div>
+<div class="madal-wl2">8
+Win
+5
+Loss
+0
+Draw</div>
+<img src="images/박태호.png" alt="">
+  <div id="caption2"></div>
+</div>
+
+<!-- 스와이퍼 나머지 내용은 다음에 채우기 -->
+      </div>
+      <div class="boo">승부예측</div>
+     <div class="sungboo-bar"><div class="left">20%</div><div class="right">80%</div>
+    </div></div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>    
+</section>
+
+<section id="new-fighter">
+   <h1 class="mianevent-title">NEW-FIGHTER</h1>
+  <video src="images/9694807-hd_1920_1080_25fps.mp4"id="dd"autoplay muted loop></video>
+<div class="new-fighter-warp">
+  <div class="fighter-img"><img src="images/인킹.png"id="in" alt=""><br>인디언킹</div>
+  <div class="fighter-img"><img src="images/락스톤.png"id="in2" alt=""><br>락스톤</div>
+  <div class="fighter-img"><img src="images/노블레스.png"id="in3" alt=""><br>노블레스</div>
+</div>
+
+
+<div id="video-modal" class="modal3">
+  <span class="close3">&times;</span>
+  <div class="modal-content3">
+<iframe width="1000" height="700" src="https://www.youtube.com/embed/kUYCTGoHB88?si=Ne_gC1NPNKdCvYwa&amp;clip=UgkxcaRhG7FEWjOnooCAS2DhGcRVMZAwMIVq&amp;clipt=ELafEhj98BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay muted ></iframe></div>
+
+</div>
+
+
+
+
+
+
+</section>
+ <h1 class="brand-title">BLACK COMBAT GOODS</h1>
+<section id="goods">
+
+
+
+  <div class="product-grid">
+    <!-- 상품 1~10 -->
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r1.jpg" alt="상품 1 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r2.jpg" alt="상품 1 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">BLACK COMBAT 더킹 후디 (black)</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r3.jpg" alt="상품 2 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r4.jpg" alt="상품 2 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">[LIMITED] BLACK COMBAT 후드티 화이트</div>
+    </div>
+
+    <!-- 반복해서 상품 10까지 -->
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r5.jpg" alt="상품 3 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r6.jpg" alt="상품 3 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">[NEW] BLACK COMBAT 후드 집업 블랙</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r7.jpg" alt="상품 4 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r8.jpg" alt="상품 4 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">BLACK COMBAT 파이트쇼츠 블랙</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r9.jpg" alt="상품 5 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r10.jpg" alt="상품 5 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">[NEW] BLACK COMBAT 후드 집업 화이트</div>
+    </div>
+
+    <!-- 두 번째 줄 -->
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r11.jpg" alt="상품 6 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r12.jpg" alt="상품 6 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">BLACK COMBAT 후드집업 (black)
+</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r14.jpg" alt="상품 7 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r15.jpg" alt="상품 7 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">BLACK COMBAT 트렁크 팬츠 (white)</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r16.jpg" alt="상품 8 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r17.jpg" alt="상품 8 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">[BLACK COMBAT GOODS] 갓파더 블랙 티셔츠</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r20.jpg" alt="상품 9 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r21.jpg" alt="상품 9 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">더블핏 클래식 반팔티셔츠(블랙/크림)</div>
+    </div>
+
+    <div class="product">
+      <div class="card">
+        <div class="inner-card">
+          <div class="card-face card-front">
+            <img src="images/r18.jpg" alt="상품 10 앞면">
+          </div>
+          <div class="card-face card-back">
+            <img src="images/r19.jpg" alt="상품 10 뒷면">
+          </div>
+        </div>
+      </div>
+      <div class="product-name">프리미엄 오버핏 맨투맨/블랙/버건디</div>
+    </div>
+  </div>
+
+
+
+</section> 
+
+
+
+ <h1 class="brand-title">THANKS TO SPONSOR</h1>
+
+  <section id="brand-slide">
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="carousel-item">
+          <img src="images/bd1.png"/>
+         
+        </div>
+        <div class="carousel-item">
+          <img src="images/bd2.png" />
+         
+        </div>
+        <div class="carousel-item">
+          <img src="images/bd3.png" />
+    
+        </div>
+        <div class="carousel-item">
+          <img src="images/bd4.png" />
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="footer">
+<div class="sns">BLACK COMBAT SNS<br>
+  <div class="sns-icon">
+<i class="fa-brands fa-youtube"></i>
+<i class="fa-brands fa-instagram"></i></div>
+</div>
+<div class="footer-text">회사명 : 주식회사 이데아 파라곤<br>
+
+주소 : 서울 금천구 가산디지털1로 142 1302호 (가산동, 가산 더스카이밸리 1차)<br>
+
+사업자 등록번호 : 682-81-02925<br>
+
+대표 : 박평화<br>
+
+전화 : 070-4193-9293<br>
+
+통신판매업신고번호 : 2022-서울금천-2877<br>
+
+개인정보 보호책임자 : 박영광 (pykp3927@gmail.com)<br>
+
+Blackcombat © 2025. All Rights Reserved.<br>
+
+Designed by MONSTERZYM</div>
+
+
+
+</section>
+
+
+
+
+
+
+  <script src="javass.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script>  var swiper = new Swiper(".mySwiper", {
+    
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });</script>
+
+     <script>
+ const swiper2 = new Swiper(".mySwiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+   speed:7000,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+
+});
+  </script>
+</body>
+  
+
+
+
+
+</html>
