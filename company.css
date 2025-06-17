@@ -1,0 +1,529 @@
+/* COMPANY 페이지 전용 스타일 */
+
+/* 컨테이너 */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.hero-title {
+  font-size: 80px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.hero-subtitle {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.hero-description {
+  font-size: 24px;
+  color: #ccc;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* 섹션 타이틀 */
+.section-title {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+/* 회사 소개 섹션 */
+.company-intro {
+  padding: 100px 0;
+  background-color: #000;
+  color: white;
+}
+
+.intro-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.intro-text h3 {
+  font-size: 32px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.intro-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #111;
+  border: 2px solid rgb(255, 200, 0);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-10px);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: bold;
+  color: rgb(255, 200, 0);
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #ccc;
+  text-transform: uppercase;
+}
+
+/* 미션 & 비전 섹션 */
+.mission-vision {
+  padding: 100px 0;
+  background-color: #111;
+  color: white;
+}
+
+.mission-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.mission-item {
+  text-align: center;
+  padding: 40px 30px;
+  background-color: #000;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.mission-item:hover {
+  transform: translateY(-10px);
+}
+
+.mission-icon {
+  font-size: 60px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 20px;
+}
+
+.mission-item h3 {
+  font-size: 28px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.mission-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* 팀 섹션 */
+.team-section {
+  padding: 100px 0;
+  background-color: #000;
+  color: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.team-member {
+  text-align: center;
+  background-color: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.member-photo {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.member-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: inherit;
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover .member-photo img {
+  transform: scale(1.1);
+}
+
+.member-info {
+  padding: 30px 20px;
+}
+
+.member-info h3 {
+  font-size: 24px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 10px;
+}
+
+.position {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #999;
+}
+
+/* 연혁 섹션 */
+.history-section {
+  padding: 100px 0;
+  background-color: #111;
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: rgb(255, 200, 0);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-date {
+  background-color: rgb(255, 200, 0);
+  color: #000;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  min-width: 100px;
+  text-align: center;
+  z-index: 2;
+}
+
+.timeline-content {
+  background-color: #000;
+  padding: 30px;
+  border-radius: 15px;
+  margin: 0 40px;
+  flex: 1;
+  border: 2px solid #333;
+}
+
+.timeline-content h3 {
+  font-size: 24px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 15px;
+}
+
+.timeline-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* 파트너십 섹션 */
+.partnership-section {
+  padding: 100px 0;
+  background-color: #000;
+  color: white;
+}
+
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.partner-item {
+  text-align: center;
+  padding: 30px;
+  background-color: #111;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.partner-item:hover {
+  transform: scale(1.05);
+}
+
+.partner-item img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.partner-item:hover img {
+  filter: grayscale(0%);
+}
+
+/* 연락처 섹션 */
+.contact-section {
+  padding: 100px 0;
+  background-color: #111;
+  color: white;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.contact-info {
+  display: grid;
+  gap: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 10px;
+  border-left: 4px solid rgb(255, 200, 0);
+}
+
+.contact-item i {
+  font-size: 24px;
+  color: rgb(255, 200, 0);
+  margin-top: 5px;
+}
+
+.contact-item h3 {
+  font-size: 20px;
+  color: rgb(255, 200, 0);
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.contact-form {
+  background-color: #000;
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgb(255, 200, 0);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #666;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(255, 200, 0);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  transform: translateY(-2px);
+}
+
+/* 네비게이션 활성 상태 */
+.navbar li a.active {
+  color: white !important;
+  background-color: rgb(255, 200, 0);
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 50px;
+  }
+  
+  .hero-subtitle {
+    font-size: 25px;
+  }
+  
+  .hero-description {
+    font-size: 18px;
+  }
+  
+  .intro-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .intro-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .timeline-item {
+    flex-direction: column !important;
+    align-items: flex-start;
+    margin-left: 40px;
+  }
+  
+  .timeline-content {
+    margin: 20px 0 0 0;
+  }
+  
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 40px;
+  }
+  
+  .hero-subtitle {
+    font-size: 20px;
+  }
+  
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+} 
