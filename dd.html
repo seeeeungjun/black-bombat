@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>Swiper demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -13,16 +14,16 @@
 <body>
   <header class="main-visual">
     <video autoplay muted loop id="mainVideo">
-      <source src="images/13717509_2048_1080_30fps.mp4"/>
+      <source src="images/최종.mp4"/>
     </video>
-    <h1 class="main-title">Who Is The King</h1><h3 class="blackbombat">BLACK COMBAT</h3><br>
+    <h1 class="main-title">THE RETURN OF THE KINGS</h1><h3 class="blackbombat">BLACK COMBAT</h3><br>
     <div class="scroll"><img src="images/scrolldown.png"alt="">  Scrolldown</div>
   </header>
 
   <nav class="navbar hidden">
     <ul>
       <a href="#none"><img src="images/logo (1).png" alt=""></a>
-      <li><a href="#none">COMPANY</a></li>
+      <li><a href="company.html">COMPANY</a></li>
       <li><a href="#none">STORE</a></li>
       <li><a href="#none">EVENT</a></li>
       <li><a href="#none">RULES</a></li>
@@ -46,7 +47,6 @@
       <div class="swiper-slide"><img src="images/8.jpg" alt=""></div>
       <div class="swiper-slide"><img src="images/9.jpg" alt=""></div>
       <div class="swiper-slide"><img src="images/10.jpg" alt=""></div>
-   
     </div>
     <div class="swiper-pagination"></div>
   </div>
@@ -122,7 +122,29 @@ Draw</div>
 <!-- 스와이퍼 나머지 내용은 다음에 채우기 -->
       </div>
       <div class="boo">승부예측</div>
-     <div class="sungboo-bar"><div class="left">20%</div><div class="right">80%</div>
+      <div class="vote-section">
+        <div class="vote-buttons">
+          <button class="vote-btn" data-fighter="정원희" data-fight-id="1">
+            <i class="fas fa-fist-raised"></i> 정원희 승리 예측
+          </button>
+          <button class="vote-btn" data-fighter="박태호" data-fight-id="1">
+            <i class="fas fa-fist-raised"></i> 박태호 승리 예측
+          </button>
+        </div>
+        <div class="vote-stats">
+          <div class="vote-info">
+            <span class="fighter-name">정원희</span>
+            <span class="vote-percentage" id="vote-percentage-1-left">20%</span>
+          </div>
+          <div class="vote-info">
+            <span class="vote-percentage" id="vote-percentage-1-right">80%</span>
+            <span class="fighter-name">박태호</span>
+          </div>
+        </div>
+      </div>
+     <div class="sungboo-bar">
+       <div class="left" id="vote-bar-1-left" style="width: 20%">20%</div>
+       <div class="right" id="vote-bar-1-right" style="width: 80%">80%</div>
     </div></div>
       <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div>
@@ -180,6 +202,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">BLACK COMBAT 더킹 후디 (black)</div>
+      <div class="product-price">₩89,000</div>
+      <button class="add-to-cart-btn" data-product-id="1" data-product-name="BLACK COMBAT 더킹 후디 (black)" data-product-price="89000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -194,6 +220,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">[LIMITED] BLACK COMBAT 후드티 화이트</div>
+      <div class="product-price">₩95,000</div>
+      <button class="add-to-cart-btn" data-product-id="2" data-product-name="[LIMITED] BLACK COMBAT 후드티 화이트" data-product-price="95000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <!-- 반복해서 상품 10까지 -->
@@ -209,6 +239,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">[NEW] BLACK COMBAT 후드 집업 블랙</div>
+      <div class="product-price">₩92,000</div>
+      <button class="add-to-cart-btn" data-product-id="3" data-product-name="[NEW] BLACK COMBAT 후드 집업 블랙" data-product-price="92000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -223,6 +257,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">BLACK COMBAT 파이트쇼츠 블랙</div>
+      <div class="product-price">₩45,000</div>
+      <button class="add-to-cart-btn" data-product-id="4" data-product-name="BLACK COMBAT 파이트쇼츠 블랙" data-product-price="45000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -237,6 +275,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">[NEW] BLACK COMBAT 후드 집업 화이트</div>
+      <div class="product-price">₩92,000</div>
+      <button class="add-to-cart-btn" data-product-id="5" data-product-name="[NEW] BLACK COMBAT 후드 집업 화이트" data-product-price="92000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <!-- 두 번째 줄 -->
@@ -251,8 +293,11 @@ Draw</div>
           </div>
         </div>
       </div>
-      <div class="product-name">BLACK COMBAT 후드집업 (black)
-</div>
+      <div class="product-name">BLACK COMBAT 후드집업 (black)</div>
+      <div class="product-price">₩88,000</div>
+      <button class="add-to-cart-btn" data-product-id="6" data-product-name="BLACK COMBAT 후드집업 (black)" data-product-price="88000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -267,6 +312,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">BLACK COMBAT 트렁크 팬츠 (white)</div>
+      <div class="product-price">₩65,000</div>
+      <button class="add-to-cart-btn" data-product-id="7" data-product-name="BLACK COMBAT 트렁크 팬츠 (white)" data-product-price="65000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -281,6 +330,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">[BLACK COMBAT GOODS] 갓파더 블랙 티셔츠</div>
+      <div class="product-price">₩35,000</div>
+      <button class="add-to-cart-btn" data-product-id="8" data-product-name="[BLACK COMBAT GOODS] 갓파더 블랙 티셔츠" data-product-price="35000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -295,6 +348,10 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">더블핏 클래식 반팔티셔츠(블랙/크림)</div>
+      <div class="product-price">₩28,000</div>
+      <button class="add-to-cart-btn" data-product-id="9" data-product-name="더블핏 클래식 반팔티셔츠(블랙/크림)" data-product-price="28000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
 
     <div class="product">
@@ -309,10 +366,41 @@ Draw</div>
         </div>
       </div>
       <div class="product-name">프리미엄 오버핏 맨투맨/블랙/버건디</div>
+      <div class="product-price">₩42,000</div>
+      <button class="add-to-cart-btn" data-product-id="10" data-product-name="프리미엄 오버핏 맨투맨/블랙/버건디" data-product-price="42000">
+        <i class="fas fa-shopping-cart"></i> 장바구니
+      </button>
     </div>
   </div>
 
+  <!-- 장바구니 모달 -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <div class="cart-header">
+        <h2><i class="fas fa-shopping-cart"></i> 장바구니</h2>
+        <span class="close-cart">&times;</span>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <!-- 장바구니 아이템들이 여기에 동적으로 추가됩니다 -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>총 금액: </span>
+          <span id="cartTotal">₩0</span>
+        </div>
+        <div class="cart-actions">
+          <button id="clearCart" class="clear-cart-btn">장바구니 비우기</button>
+          <button id="checkoutBtn" class="checkout-btn">주문하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- 장바구니 아이콘 (우상단) -->
+  <div class="cart-icon" id="cartIcon">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count" id="cartCount">0</span>
+  </div>
 
 </section> 
 
@@ -389,7 +477,7 @@ Designed by MONSTERZYM</div>
      <script>
  const swiper2 = new Swiper(".mySwiper2", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 10,
   loop: true,
    speed:7000,
   autoplay: {
